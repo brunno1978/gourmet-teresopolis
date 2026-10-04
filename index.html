@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Curso de Confeitaria em Teresópolis | Instituto Gourmet</title>
+<meta name="description" content="Curso de confeitaria presencial em Teresópolis. Aulas práticas de bolos, doces finos e decoração. Fale no WhatsApp.">
+
+<!--
+  ============================================================
+  PASSO 1 — GOOGLE ADS (tag de acompanhamento)
+  Troque nos 2 lugares abaixo:
+    AW-XXXXXXXXXX  -> ID da tag (Google Ads > Metas > Conversões > Tag)
+    CONVERSION_LABEL -> rótulo da conversão "Clique no WhatsApp"
+  Ambos aparecem no trecho de código que o Google Ads gera ao criar
+  a conversão (tipo: Site, categoria: Lead / Clique em botão).
+  ============================================================
+-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXXX');
+
+  // Chamado a cada clique nos botões de WhatsApp
+  function trackWhatsApp() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-XXXXXXXXXX/CONVERSION_LABEL'
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F8E3D6; --bg-card:#FCEEE3; --fg:#3A2418; --fg-muted:#7A5B48;
+  --accent:#A6334A; --accent-2:#C98A3E; --line:#E7C7AE; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#241512; --bg-card:#2E1C17; --fg:#F5E6DA; --fg-muted:#C9AE9C;
+    --accent:#E2708A; --accent-2:#E3A85E; --line:#4A2F26; color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px "Work Sans",system-ui,-apple-system,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:0 56px}
+h1,h2,.display{font-family:"Newsreader",Georgia,"Times New Roman",serif}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:600;color:var(--accent)}
+header.hero{padding-block:44px 28px}
+.hero h1{font-size:clamp(30px,7vw,44px);line-height:1.08;font-weight:600;font-style:italic;margin:10px 0 14px;text-wrap:balance}
+.hero p.lede{font-size:17px;line-height:1.55;color:var(--fg-muted);max-width:52ch;margin:0 0 24px}
+.btn-whatsapp{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px 20px;background:var(--accent);color:#FFF5EF;font-weight:600;font-size:16.5px;text-decoration:none;border-radius:12px;box-shadow:0 8px 20px -8px rgba(166,51,74,.55);transition:transform .15s ease}
+.btn-whatsapp:active{transform:scale(.98)}
+.btn-whatsapp svg{flex:none}
+.subnote{margin-top:10px;font-size:13px;color:var(--fg-muted);text-align:center}
+section{padding-block:28px;border-top:1px solid var(--line)}
+h2{font-size:22px;font-style:italic;font-weight:600;margin:0 0 16px}
+.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.proof-card{background:var(--bg-card);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
+.proof-card .num{font-family:"Newsreader",serif;font-size:15px;font-style:italic;color:var(--accent-2);display:block;margin-bottom:4px}
+.proof-card p{margin:0;font-size:14px;line-height:1.4}
+.curric-list{display:flex;flex-direction:column;gap:10px}
+.curric-item{display:flex;gap:12px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.curric-item .mark{font-family:"Newsreader",serif;font-style:italic;color:var(--accent);font-size:15px;flex:none;width:22px}
+.curric-item p{margin:0;font-size:14.5px;line-height:1.5;color:var(--fg-muted)}
+.curric-item strong{color:var(--fg);font-weight:600}
+.contact-card{background:var(--bg-card);border:1px solid var(--line);border-radius:16px;padding:24px 20px;text-align:center}
+.contact-card h2{margin-bottom:8px}
+.contact-card p.addr{color:var(--fg-muted);font-size:14.5px;margin:0 0 20px}
+.phone-text{font-family:"Newsreader",serif;font-size:18px;font-style:italic;margin:14px 0 0}
+footer{padding-top:24px;text-align:center;font-size:12.5px;color:var(--fg-muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Instituto Gourmet · Teresópolis</span>
+    <h1>Curso de Confeitaria</h1>
+    <p class="lede">Aprenda a fazer bolos, doces finos e sobremesas com técnica profissional, em aulas práticas presenciais aqui em Teresópolis.</p>
+    <a class="btn-whatsapp" onclick="trackWhatsApp()" href="https://wa.me/5521991767689?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20o%20curso%20de%20confeitaria%20do%20Instituto%20Gourmet%20Teres%C3%B3polis." target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.06 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.86 11.86 0 0 0 5.66 1.44h.01c6.55 0 11.86-5.3 11.86-11.86 0-3.17-1.24-6.15-3.4-8.42Zm-8.46 18.25h-.01a9.85 9.85 0 0 1-5.02-1.37l-.36-.21-3.8 1 1.01-3.7-.24-.38a9.85 9.85 0 0 1-1.51-5.24c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 6.99 2.9a9.82 9.82 0 0 1 2.9 6.99c0 5.46-4.44 9.9-9.86 9.9Zm5.4-7.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.08 4.48.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.75-.71 2-1.4.24-.68.24-1.27.17-1.4-.07-.13-.27-.2-.57-.35Z" fill="#FFF5EF"/></svg>
+      Fale no WhatsApp agora
+    </a>
+    <p class="subnote">Resposta rápida · Vagas limitadas por turma</p>
+  </header>
+
+  <section>
+    <h2>Por que estudar confeitaria aqui</h2>
+    <div class="proof-grid">
+      <div class="proof-card"><span class="num">Prática</span><p>Aulas de mão na massa, do preparo ao acabamento de cada receita.</p></div>
+      <div class="proof-card"><span class="num">Turma local</span><p>Curso presencial em Teresópolis, sem precisar viajar.</p></div>
+      <div class="proof-card"><span class="num">Orientação</span><p>Acompanhamento de professores durante todo o curso.</p></div>
+      <div class="proof-card"><span class="num">Certificado</span><p>Formação profissionalizante ao concluir o curso.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>O que você vai aprender</h2>
+    <div class="curric-list">
+      <div class="curric-item"><span class="mark">01</span><p><strong>Bolos e recheios</strong> — massas, umedecimento e recheios clássicos e autorais.</p></div>
+      <div class="curric-item"><span class="mark">02</span><p><strong>Doces finos</strong> — trufas, bombons e docinhos para festas e venda.</p></div>
+      <div class="curric-item"><span class="mark">03</span><p><strong>Cobertura e decoração</strong> — chantininho, pasta americana e acabamentos.</p></div>
+      <div class="curric-item"><span class="mark">04</span><p><strong>Precificação básica</strong> — noções para quem quer confeitar como renda extra.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contact-card">
+      <h2>Garanta sua vaga</h2>
+      <p class="addr">Instituto Gourmet Teresópolis — aulas presenciais na cidade</p>
+      <a class="btn-whatsapp" onclick="trackWhatsApp()" href="https://wa.me/5521991767689?text=Ol%C3%A1%21%20Vi%20o%20an%C3%BAncio%20e%20quero%20saber%20mais%20sobre%20o%20curso%20de%20confeitaria%20do%20Instituto%20Gourmet%20Teres%C3%B3polis." target="_blank" rel="noopener">
+        Fale no WhatsApp agora
+      </a>
+      <p class="phone-text">(21) 99176-7689</p>
+    </div>
+  </section>
+
+  <footer>Instituto Gourmet Teresópolis · Curso de Confeitaria</footer>
+
+</div>
+</body>
+</html>
